@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribbble</title>
+    <link rel="preload" href="Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="signup-container">
+            <div class="front-image">
+                <img src="images/dribble front page.png" alt="img1">
+            </div>
+            <div class="signup-section">
+                <div class="signin-option">
+                    <p>Already a member?<a href="">Sign In</a></p>
+                </div>
+                <div class="signup-form-container">
+                    <div class="signup-form">
+                        <div class="signup-heading">
+                            Sign up to Dribbble
+                        </div>
+                        <form action="profile.html">
+                            <div class="name-usrname">
+                                <div>
+                                    <label for="fName">Name</label>
+                                    <input type="text" id="fName" name="fName" value="John">
+                                </div>
+                                <div>
+                                    <label for="userName">Username</label>
+                                    <input type="text" id="userName" name="userName" value="John22">
+                                </div>
+                            </div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" value="account@refero.design">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="6+ characters" required>
+                            <div class="term-policy">
+                                <input class="check-box1" id="check1" type="checkbox" name="" required>
+                                <label for="check1" class="icons"><i class='bx bx-check' id="checkbox-icon1"></i></label>
+                                <p>Creating an account means you're okay with our <a href="">Terms of Service, Privacy Policy,</a> and our default <a href="">Notification Settings.</a></p>
+                            </div>
+                            <a href="profile.html" style="display: block;"><button class="btn-account">Create Account</button></a>
+                            <div class="captcha-info">
+                                This site is protected by reCAPTCHA and the Google <a href="">Privacy Policy</a> and <a href="">Terms of Service</a> apply.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

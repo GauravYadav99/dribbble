@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+.sacramento-regular {
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+
+html {
+    transition: all 0.5s ease;
+}
+
+/* Services Page */
+
+
+.container {
+    max-width: 1640px;
+    margin: auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 30px 45px;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 600;
+    color: #F73D93;
+    padding: 12px 0 0 0;
+}
+
+.logo-container i {
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #EEEEEE;
+}
+
+.container h1, .container p {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.container p {
+    color: #413F42;
+    padding: 20px 0;
+}
+
+.options-container, .card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options-container {
+    padding: 80px 0 20px;
+    gap: 30px;
+}
+
+.option-card {
+    border: 1.5px solid #ccc;
+    border-radius: 15px;
+}
+
+.card-wrapper {
+    height: 256px;
+    padding: 22px 28px;
+    flex-direction: column;
+}
+
+.option-card img {
+    width: 200px;
+    height: 125px;
+}
+
+.option-card h3 {
+    padding: 10px 0;
+    width: 210px;
+    text-align: center;
+}
+
+.option-card p {
+    user-select: none;
+    font-size: 13px;
+    font-weight: 500;
+    width: 210px;
+    padding: 5px 0 10px;
+}
+
+.option-card i {
+    padding: 2px;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.pink-border {
+    border: 1.5px solid #F73D93;
+}
+
+.pink-background {
+    background-color: #F73D93;
+    border: 1.5px solid #F73D93;
+}
+
+.move-up {
+    position: relative;
+    bottom: 40px;
+}
+
+p.multiple-info {
+    visibility: hidden;
+    color: black;
+    font-weight: 600;
+}
+
+.finish-btn {
+    text-align: center;
+}
+
+.finish-btn button:disabled {
+    background-color: #f36cab;
+}
+
+.finish-btn button {
+    font-size: 14px;
+    padding: 10px 100px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color: #F73D93;
+}
+
+.finish-btn button:hover {
+    background-color: #f8298a;
+}
+
+.press-return {
+    visibility: hidden;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 0 40px;
+    color: #b2b2b2;
+}
+
+
+/* Responsiveness */
+
+@media (max-width: 1024px) {
+    .options-container {
+        flex-direction: column;
+        padding: 60px 0 20px;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 475px) {
+    .logo-container {
+        padding: 30px;
+    }
+}

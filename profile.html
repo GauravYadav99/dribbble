@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribbble</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-page-container">
+            <div class="logo sacramento-regular">dribbble</div>
+            <div class="profile-section">
+                <div class="profile-container">
+                    <h1>Welcome! Let's create your profile</h1>
+                    <h6>Let others get to know you better! You can do these later</h6>
+                    <h3>Add an avatar</h3>
+                    <div id="drop-area" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);" onclick="fileInput.click()">
+                        <img src="" id="preview" alt="">
+                        <div class="choose-text">
+                            <p>Choose image</p>
+                            <div class="choose-default">
+                                <i class='bx bx-chevron-right' style='color:#b2b2b2'  ></i>
+                                <span>Or choose one of our defaults</span>
+                            </div>
+                        </div>
+                        <input type="file" id="fileInput" style="display: none;" onchange="handleFileSelect(event)">
+                    </div>
+                    <h3>Add your location</h3>
+                    <input class="location-input" type="text" placeholder="Enter a location" id="locationInput">
+                    <a href="services.html"><button id="nextBtn" disabled>Next</button></a>
+                    <div class="press-return-profile">or Press RETURN</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
